@@ -1,0 +1,157 @@
+/* Seção Sobre Nós */
+.sobre-nos {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.sobre-texto {
+  flex: 1;
+  text-align: center;
+}
+
+.sobre-texto h1 {
+  font-size: 36px;
+  color: #3d7a45;
+  margin-bottom: 20px;
+}
+
+.sobre-texto p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.sobre-imagem {
+  flex: 1;
+  text-align: center;
+}
+
+.sobre-imagem img {
+  max-width: 100%;
+  border-radius: 15px;
+  border: 2px solid #3d7a45;
+}
+
+/* Banner da página Sobre */
+.banner-sobre img {
+  width: 100%;
+  margin: 40px 0;
+  display: block;
+}
+
+/* Cards da página Sobre */
+.cards-sobre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  padding: 20px;
+}
+
+.card-sobre {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.card-sobre h2 {
+  font-size: 24px;
+  color: #3d7a45;
+  margin-bottom: 15px;
+}
+
+.card-sobre p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .sobre-texto h1 {
+    font-size: 30px;
+  }
+
+  .sobre-texto p {
+    font-size: 16px;
+  }
+
+  .card-sobre h2 {
+    font-size: 22px;
+  }
+
+  .card-sobre p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Empilha texto e imagem */
+  .sobre-nos {
+    flex-direction: column;
+    gap: 20px;
+    margin: 30px auto;
+  }
+
+  .sobre-texto {
+    text-align: center;
+  }
+
+  .sobre-texto h1 {
+    font-size: 26px;
+  }
+
+  .sobre-texto p {
+    font-size: 15px;
+  }
+
+  .sobre-imagem img {
+    max-width: 90%;
+  }
+
+  /* Cards ficam em 2 colunas */
+  .cards-sobre {
+    justify-content: center;
+  }
+
+  .card-sobre {
+    flex: 1 1 45%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes para celular pequeno */
+  .sobre-texto h1 {
+    font-size: 22px;
+  }
+
+  .sobre-texto p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .cards-sobre {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card-sobre {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .card-sobre h2 {
+    font-size: 20px;
+  }
+
+  .card-sobre p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,257 @@
+/* Footer */
+.rodape-principal {
+  background: #fff8e1;
+  color: #2e5d34;
+  font-family: Arial, sans-serif;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Linha superior */
+.rodape-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rodape-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.rodape-logo img {
+  width: 120px;
+}
+
+.rodape-localizacao {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 15px;
+  border-radius: 25px;
+  border: 1px solid rgb(61, 122, 69);
+}
+
+/* Linha divisória */
+.divisor-verde {
+  border: 1px solid #2e5d34;
+  margin: 10px 0;
+}
+
+/* Linha do meio */
+.rodape-medio {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.primeiras-colunas {
+  display: flex;
+  gap: 100px;
+}
+.coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.coluna h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.coluna a {
+  color: #2e5d34;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.coluna a:hover {
+  color: #3d7a45;
+  transform: scale(1.1);
+}
+
+.coluna-direita {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+/* Container das redes sociais */
+.redes-sociais {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Ícones de redes sociais com círculo */
+.redes-sociais a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(61, 122, 69, 0.9);
+  border-radius: 50%;
+  color: #2e5d34;
+  font-size: 20px;
+  transition: background 0.3s, color 0.3s;
+  margin-left: 10px;
+}
+
+.redes-sociais a:hover {
+  background: rgba(61, 122, 69, 0.5);
+  color: #fff;
+}
+
+/* Ícone de acessibilidade */
+.acessibilidade a {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(61, 122, 69, 0.9);
+  color: #2e5d34;
+  font-size: 24px;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+  z-index: 999;
+}
+
+.acessibilidade a:hover {
+  background: rgba(61, 122, 69, 0.5);
+  color: #fff;
+}
+
+#acessibilidade-menu {
+  display: none;
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 998;
+}
+
+#acessibilidade-menu button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #3d7a45;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+#acessibilidade-menu button:hover {
+  background: #2e5d34;
+}
+
+/* Linha inferior */
+.rodape-inferior {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .rodape-principal {
+    padding: 30px 20px;
+    align-items: stretch;
+  }
+
+  .rodape-superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .rodape-logo {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .rodape-localizacao {
+    margin-top: 10px;
+    width: fit-content;
+  }
+
+  .rodape-medio {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .rodape-inferior {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .divisor-verde {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .rodape-principal {
+    padding: 15px;
+  }
+
+  .rodape-logo {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .rodape-medio {
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .primeiras-colunas {
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .redes-sociais {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .redes-sociais a {
+    margin: 0 5px;
+  }
+
+  .coluna-direita {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .divisor-verde {
+    margin: 8px 0;
+  }
+}

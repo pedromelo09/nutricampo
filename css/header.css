@@ -1,0 +1,227 @@
+header {
+  background: #fff8e1;
+}
+
+/* Cabeçalho principal */
+.cabecalho-principal {
+  width: 100%;
+  border-bottom: 2px solid #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Linha de cima */
+.barra-superior {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  gap: 20px;
+}
+
+.logo img {
+  width: 140px;
+  flex: 0 0 auto;
+}
+
+/* Barra de pesquisa */
+.barra-pesquisa {
+  flex: 1;
+  display: flex;
+  max-width: 500px;
+  position: relative;
+}
+
+.barra-pesquisa input {
+  width: 100%;
+  padding: 10px 120px 10px 15px;
+  border: none;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-weight: bold;
+  outline: none;
+  color: #2e5d34;
+  background: rgba(61, 122, 69, 0.2);
+}
+
+.barra-pesquisa i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #2e5d34;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+/* Menus suspensos (Central de Atendimento e Login) */
+.menu-suspenso {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #2e5d34;
+  transition: color 0.3s;
+  font-weight: bold;
+  flex: 0 0 auto;
+}
+
+.menu-suspenso i {
+  font-size: 24px;
+}
+
+.menu-suspenso:hover {
+  color: #3d7a45;
+}
+
+/* Botão hambúrguer */
+.hamburguer {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #2e5d34;
+}
+
+/* Menu suspenso wrapper */
+.menu-suspenso-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+/* Linha de baixo (menu principal) */
+.barra-inferior {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.barra-inferior ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.barra-inferior a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2e5d34;
+  transition: transform 0.3s, color 0.3s;
+  gap: 5px;
+}
+
+/* Ícones com fundo verde circular */
+.barra-inferior a i {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  margin-bottom: 4px;
+  background: rgba(61, 122, 69, 0.2);
+  color: #2e5d34;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.barra-inferior a:hover {
+  color: #3d7a45;
+  transform: scale(1.1);
+}
+
+/* Botão hambúrguer */
+.hamburguer {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #2e5d34;
+}
+
+/* Menu suspenso wrapper */
+.menu-suspenso-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .barra-superior {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .barra-pesquisa {
+    order: 2;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
+  }
+
+  .menu-suspenso-wrapper {
+    order: 3;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .menu-suspenso-wrapper.active {
+    display: flex;
+  }
+
+  .menu-suspenso {
+    justify-content: flex-start;
+    padding: 10px 0;
+  }
+
+  .hamburguer {
+    display: block;
+    order: 1;
+    align-self: center;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  .barra-inferior {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .barra-inferior.active {
+    display: flex !important;
+  }
+
+  .barra-inferior ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .barra-inferior a {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}

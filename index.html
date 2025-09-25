@@ -1,23 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nutri Campo</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="img/Logo.png" alt="">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/accessibility.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header"></div>
+    <main>
+      <!-- Carousel -->
+      <section class="carousel-principal">
+        <div class="carousel-container">
+          <button class="carousel-btn prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <div class="carousel-slide">
+            <img src="img/nutri.png" alt="Slide 1" class="active" />
+            <img src="img/carrousel4.jpg" alt="Slide 2" />
+            <img src="img/carrousel2.jpg" alt="Slide 3" />
+          </div>
+
+          <button class="carousel-btn next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
         </div>
-        <nav>
-            <a href="home">Home</a>
-            <a href="sobre nos">Sobre Nós</a>
-            <a href="blog">Blog</a>
-            <a href="produtos">Produtos</a>
-            <a href="receitas">Receitas</a>
-        </nav>
-    </header>
-</body>
+      </section>
+
+      <!-- Quadro azul com borda verde -->
+      <section class="quadro-destaque">
+        <h2>
+          "A comida que deveria nutrir pode estar colocando a <br />saúde em
+          risco."
+        </h2>
+        <p>
+          Alimentos contaminados por agrotóxicos são uma ameaça silenciosa para
+          toda a família — principalmente para as crianças. Na NutriCampo,
+          cultivamos alimentos 100% livres de veneno, com respeito à natureza e
+          à sua saúde.
+        </p>
+      </section>
+
+      <!-- Cards informativos -->
+      <section class="cards-info">
+        <div class="card">
+          <i class="fas fa-seedling"></i>
+          <p>Cultivo responsável e sustentável.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-eye"></i>
+          <p>Transparência em cada etapa da produção.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-handshake"></i>
+          <p>
+            Fornecimento confiável para famílias, escolas, supermercados e
+            restaurantes.
+          </p>
+        </div>
+      </section>
+
+      <!-- Call to action -->
+      <section class="call-to-action">
+        <p>Você já sabe o que fazemos. Agora, descubra por que fazemos.</p>
+        <button class="btn-laranja">Ver nossa essência</button>
+      </section>
+
+      <!-- Banner grande -->
+      <section class="banner-final">
+        <img src="img/banner.PNG" alt="Banner NutriCampo" />
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

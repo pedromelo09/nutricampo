@@ -1,0 +1,118 @@
+/* Banner inicial */
+.banner-produto {
+  background: url("../img/carrousel2.jpg") no-repeat center/cover;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 70vh;
+  padding: 0 10%;
+  position: relative;
+  text-align: left;
+}
+
+.banner-produto::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.banner-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.btn-laranja {
+  background: #ff9800;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btn-laranja:hover {
+  background: #e68900;
+}
+
+/* Container Produtos */
+.container-produtos {
+  background: #f7f7f7;
+  margin: -50px 5% 0;
+  padding: 4rem 10%;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  z-index: 2;
+}
+
+.container-produtos h2 {
+  text-align: left;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #3d7a45;
+}
+
+/* Grid dos produtos */
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Card produto */
+.card-produto {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-produto:hover {
+  transform: translateY(-8px);
+}
+
+.card-produto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-produto h3 {
+  font-size: 1.3rem;
+  margin: 1rem 0 0.5rem;
+  color: #3d7a45;
+}
+
+.card-produto p {
+  margin: 0 1rem 1.5rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Card destaque ocupa largura total */
+.card-produto.destaque {
+  grid-column: 1 / -1; /* ocupa todas as colunas */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card-produto.destaque img {
+  height: 350px;
+  object-fit: cover;
+}
