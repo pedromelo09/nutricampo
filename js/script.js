@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch(`${basePath}partials/social_media.html`)
     .then((res) => res.text())
     .then((data) => {
-      console.log("Conteúdo carregado:", data); // 👈 Testa aqui
       const socialMedia = document.getElementById("social-media");
       if (socialMedia) {
         socialMedia.innerHTML = data;
