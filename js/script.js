@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const basePath = window.location.pathname.includes("/pages/") ? "../" : "./";
+
   // Função para inicializar acessibilidade
   function initAcessibilidade() {
     const toggleBtn = document.getElementById("acessibilidade-toggle");
@@ -39,15 +41,15 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!slides.length || !carousel || !prevBtn || !nextBtn) return;
 
     const fundos = [
-      "img/nutri.png",
-      "img/carrousel4.jpg",
-      "img/carrousel2.jpg",
+      ${basePath}img/nutri.png,
+      ${basePath}img/carrousel4.jpg,
+      ${basePath}img/carrousel2.jpg,
     ];
     let indice = 0;
 
     function mostrarSlide(n) {
       slides.forEach((slide, i) => slide.classList.toggle("active", i === n));
-      carousel.style.backgroundImage = `url('${fundos[n]}')`;
+      carousel.style.backgroundImage = url('${fundos[n]}');
     }
 
     prevBtn.addEventListener("click", () => {
@@ -64,15 +66,15 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Carrega footer
-  fetch("pedromelo09/nutricampo/partials/footer.html")
+  fetch(${basePath}partials/footer.html)
     .then((res) => res.text())
     .then((data) => {
       document.getElementById("footer").innerHTML = data;
     })
     .catch((err) => console.error("Erro ao carregar footer:", err));
-  
+
   // Carrega header
-  fetch("/pedromelo09/nutricampo/partials/header.html")
+  fetch(${basePath}partials/header.html)
     .then((res) => res.text())
     .then((data) => {
       document.getElementById("header").innerHTML = data;
