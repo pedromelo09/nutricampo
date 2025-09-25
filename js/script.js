@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Carrega footer
-  fetch("/pedromelo09/nutricampo/partials/footer.html")
+  fetch("pedromelo09/nutricampo/partials/footer.html")
     .then((res) => res.text())
     .then((data) => {
       document.getElementById("footer").innerHTML = data;
