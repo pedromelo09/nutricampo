@@ -63,17 +63,16 @@ document.addEventListener("DOMContentLoaded", () => {
     mostrarSlide(indice);
   }
 
-  // Carrega header
-  fetch("../partials/header.html")
+  // Carrega footer
+  fetch("/pedromelo09/nutricampo/partials/footer.html")
     .then((res) => res.text())
     .then((data) => {
       document.getElementById("header").innerHTML = data;
     })
     .catch((err) => console.error("Erro ao carregar header:", err));
-
-  // Carrega footer
+  
   // Carrega header
-  fetch("../partials/header.html")
+  fetch("/pedromelo09/nutricampo/partials/header.html")
     .then((res) => res.text())
     .then((data) => {
       document.getElementById("header").innerHTML = data;
