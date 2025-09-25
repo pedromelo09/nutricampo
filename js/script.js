@@ -67,9 +67,9 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("/pedromelo09/nutricampo/partials/footer.html")
     .then((res) => res.text())
     .then((data) => {
-      document.getElementById("header").innerHTML = data;
+      document.getElementById("footer").innerHTML = data;
     })
-    .catch((err) => console.error("Erro ao carregar header:", err));
+    .catch((err) => console.error("Erro ao carregar footer:", err));
   
   // Carrega header
   fetch("/pedromelo09/nutricampo/partials/header.html")
