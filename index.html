@@ -1,91 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nutri Campo</title>
+    <title>Blog - NutriCampo</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/accessibility.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
+    <link rel="stylesheet" href="../css/accessibility.css" />
   </head>
   <body>
     <!-- Header -->
     <div id="header"></div>
-    <main>
-      <!-- Carousel -->
-      <section class="carousel-principal">
-        <div class="carousel-container">
-          <button class="carousel-btn prev">
-            <i class="fas fa-chevron-left"></i>
-          </button>
 
-          <div class="carousel-slide">
-            <img src="img/nutri.png" alt="Slide 1" class="active" />
-            <img src="img/carrousel4.jpg" alt="Slide 2" />
-            <img src="img/carrousel2.jpg" alt="Slide 3" />
+    <main>
+      <!-- Banner inicial -->
+      <section class="banner-blog">
+        <div class="banner-content">
+          <h1>
+            O Sabor que <br />alimenta <br />
+            sua saúde
+          </h1>
+          
+          <a href="#agrofamilia"><button class="btn-laranja">Explorar Blog</button></a>
+        </div>
+      </section>
+
+      <section id="agrofamilia">
+      <!-- Container com postagens -->
+      <section id="post" class="container-posts">
+        <h2>Agrofamília</h2>
+        <div class="cards-posts">
+          <div class="card-post">
+            <img src="../img/familia_souza.jpg" alt="Post 1" />
+            <h3>A família Souza</h3>
+            <p>
+              "A família Souza descobriu na NutriCampo uma forma mais saudável e
+              natural de se alimentar. Hoje, frutas e verduras fresquinhas fazem
+              parte do dia a dia, trazendo mais energia e qualidade de vida para
+              esta família."
+            </p>
+          </div>
+        </section>
+
+          <div class="card-post">
+            <img src="../img/criacanas_escola.jpg" alt="Post 2" />
+            <h3>Escola Básica Adolfo Konder</h3>
+            <p>
+              “A Escola Básica Adolfo Konder passou a incluir os alimentos da
+              NutriCampo na merenda escolar e os resultados surpreenderam, hoje
+              em dia as crianças estão mais ativas, felizes e bem nutridas. Não
+              deixe de cuidar do seu pequenino.”
+            </p>
           </div>
 
-          <button class="carousel-btn next">
-            <i class="fas fa-chevron-right"></i>
-          </button>
+          <div class="card-post">
+            <img src="../img/paciente.png" alt="Post 3" />
+            <h3>No Multihospital</h3>
+            <p>
+              "No Multihospital, a introdução dos alimentos da NutriCampo ajudou
+              pacientes em recuperação. A nutrição natural e sem agrotóxicos
+              fortaleceu e acelerou a saúde de muitos deles."
+            </p>
+          </div>
         </div>
       </section>
 
-      <!-- Quadro azul com borda verde -->
-      <section class="quadro-destaque">
-        <h2>
-          "A comida que deveria nutrir pode estar colocando a <br />saúde em
-          risco."
-        </h2>
-        <p>
-          Alimentos contaminados por agrotóxicos são uma ameaça silenciosa para
-          toda a família — principalmente para as crianças. Na NutriCampo,
-          cultivamos alimentos 100% livres de veneno, com respeito à natureza e
-          à sua saúde.
-        </p>
-      </section>
-
-      <!-- Cards informativos -->
-      <section class="cards-info">
-        <div class="card">
-          <i class="fas fa-seedling"></i>
-          <p>Cultivo responsável e sustentável.</p>
-        </div>
-          <div class="card">
-          <i class="fas fa-handshake"></i>
+      <!-- Banner dentro do container -->
+      <section class="banner-interno">
+        <div class="banner-interno-content">
+          <h2>Na Nutri Campo Alimentos, a nutrição começa no campo</h2>
           <p>
-            Fornecimento confiável para famílias, escolas, supermercados e
-            restaurantes.
+            Cultivamos alimentos com responsabilidade, qualidade e respeito à
+            natureza.
           </p>
         </div>
-        <div class="card">
-          <i class="fas fa-eye"></i>
-          <p>Transparência em cada etapa da produção.</p>
+      </section>
+      <section class="banner-externo-content">
+        <ul>
+          <li>
+            Selecionamos sementes orgânicas e crioulas de alta qualidade,
+            preservando a biodiversidade e garantindo o sabor autêntico dos
+            alimentos.
+          </li>
+          <li>
+            Planejamos cuidadosamente a rotação de culturas, mantendo a
+            fertilidade do solo, equilibrando os nutrientes e prevenindo o
+            surgimento de pragas de forma natural.
+          </li>
+          <li>
+            Utilizamos apenas adubos naturais, como composto orgânico, esterco
+            curtido e adubação verde, assegurando que cada alimento seja rico em
+            nutrientes e livre de contaminações químicas.
+          </li>
+          <li>
+            Protegemos nossas plantações com defensivos naturais, como calda de
+            fumo, calda bordalesa e óleo de nem, mantendo o equilíbrio
+            ecológico.
+          </li>
+          <li>
+            Nossos sistemas de irrigação são controlados e eficientes,
+            utilizando gotejamento e o reaproveitamento da água da chuva para
+            garantir a sustentabilidade.
+          </li>
+          <li>
+            Acompanhamos de perto a saúde das plantas, monitorando cada etapa do
+            cultivo para oferecer alimentos seguros e nutritivos.
+          </li>
+          <li>
+            Não utilizamos nenhum produto químico para acelerar o
+            amadurecimento, respeitando o tempo da natureza e garantindo mais
+            sabor, qualidade e saúde.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Seção de novidades -->
+      <section class="novidades">
+        <h2>Novidades</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Novos Produtos <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-body">
+              <p>
+                Novos produtos chegaram à nossa loja, trazendo ainda mais opções
+                saudáveis para você e sua família.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Estamos crescendo <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-body">
+              <p>
+                Estamos crescendo! Uma nova filial da NutriCampo está de portas
+                abertas para receber você.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Aprenda com a NutriCampo <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-body">
+              <p>
+                Aprenda com a NutriCampo: como conservar frutas corretamente e
+                garantir mais sabor e durabilidade.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Paciente NutriCampo <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-body">
+              <p>
+                Um paciente enfrentando anemia encontrou a NutriCampo para
+                melhorar sua alimentação e através de uma nova rotina alimentar
+                isso vem ajudando sua recuperação.
+              </p>
+            </div>
+          </div>
         </div>
-        
-      </section>
-
-      <!-- Call to action -->
-      <section class="call-to-action">
-        <p>Você já sabe o que fazemos. Agora, descubra por que fazemos.</p>
-        <button class="btn-laranja">Ver nossa essência</button>
-      </section>
-
-      <!-- Banner grande -->
-      <section class="banner-final">
-        <img src="img/banner.PNG" alt="Banner NutriCampo" />
       </section>
     </main>
 
     <!-- Footer -->
     <div id="footer"></div>
 
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
