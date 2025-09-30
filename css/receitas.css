@@ -45,3 +45,8 @@
 .accordion-body p {
   margin-bottom: 15px;
 }
+
+.call-to-action a {
+  text-decoration: none;
+  display: inline-block;
+}
