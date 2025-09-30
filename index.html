@@ -1,184 +1,348 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog - NutriCampo</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/blog.css" />
-    <link rel="stylesheet" href="../css/accessibility.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <div id="header"></div>
+/* Banner inicial */
+.banner-blog {
+  background: url("../img/carrousel3.jpg") no-repeat center/cover;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  padding: 0 10%;
+  position: relative;
+}
 
-    <main>
-      <!-- Banner inicial -->
-      <section class="banner-blog">
-        <div class="banner-content">
-          <h1>
-            O Sabor que <br />alimenta <br />
-            sua saúde
-          </h1>
-          
-          <a href="#agrofamilia"><button class="btn-laranja">Explorar Blog</button></a>
-        </div>
-      </section>
+.banner-blog::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
 
-      <section id="agrofamilia">
-      <!-- Container com postagens -->
-      <section id="post" class="container-posts">
-        <h2>Agrofamília</h2>
-        <div class="cards-posts">
-          <div class="card-post">
-            <img src="../img/familia_souza.jpg" alt="Post 1" />
-            <h3>A família Souza</h3>
-            <p>
-              "A família Souza descobriu na NutriCampo uma forma mais saudável e
-              natural de se alimentar. Hoje, frutas e verduras fresquinhas fazem
-              parte do dia a dia, trazendo mais energia e qualidade de vida para
-              esta família."
-            </p>
-          </div>
-        </section>
+.banner-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
 
-          <div class="card-post">
-            <img src="../img/criacanas_escola.jpg" alt="Post 2" />
-            <h3>Escola Básica Adolfo Konder</h3>
-            <p>
-              “A Escola Básica Adolfo Konder passou a incluir os alimentos da
-              NutriCampo na merenda escolar e os resultados surpreenderam, hoje
-              em dia as crianças estão mais ativas, felizes e bem nutridas. Não
-              deixe de cuidar do seu pequenino.”
-            </p>
-          </div>
+.banner-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
 
-          <div class="card-post">
-            <img src="../img/paciente.png" alt="Post 3" />
-            <h3>No Multihospital</h3>
-            <p>
-              "No Multihospital, a introdução dos alimentos da NutriCampo ajudou
-              pacientes em recuperação. A nutrição natural e sem agrotóxicos
-              fortaleceu e acelerou a saúde de muitos deles."
-            </p>
-          </div>
-        </div>
-      </section>
+.banner-content .btn-laranja {
+  background: #ff9800;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
 
-      <!-- Banner dentro do container -->
-      <section class="banner-interno">
-        <div class="banner-interno-content">
-          <h2>Na Nutri Campo Alimentos, a nutrição começa no campo</h2>
-          <p>
-            Cultivamos alimentos com responsabilidade, qualidade e respeito à
-            natureza.
-          </p>
-        </div>
-      </section>
-      <section class="banner-externo-content">
-        <ul>
-          <li>
-            Selecionamos sementes orgânicas e crioulas de alta qualidade,
-            preservando a biodiversidade e garantindo o sabor autêntico dos
-            alimentos.
-          </li>
-          <li>
-            Planejamos cuidadosamente a rotação de culturas, mantendo a
-            fertilidade do solo, equilibrando os nutrientes e prevenindo o
-            surgimento de pragas de forma natural.
-          </li>
-          <li>
-            Utilizamos apenas adubos naturais, como composto orgânico, esterco
-            curtido e adubação verde, assegurando que cada alimento seja rico em
-            nutrientes e livre de contaminações químicas.
-          </li>
-          <li>
-            Protegemos nossas plantações com defensivos naturais, como calda de
-            fumo, calda bordalesa e óleo de nem, mantendo o equilíbrio
-            ecológico.
-          </li>
-          <li>
-            Nossos sistemas de irrigação são controlados e eficientes,
-            utilizando gotejamento e o reaproveitamento da água da chuva para
-            garantir a sustentabilidade.
-          </li>
-          <li>
-            Acompanhamos de perto a saúde das plantas, monitorando cada etapa do
-            cultivo para oferecer alimentos seguros e nutritivos.
-          </li>
-          <li>
-            Não utilizamos nenhum produto químico para acelerar o
-            amadurecimento, respeitando o tempo da natureza e garantindo mais
-            sabor, qualidade e saúde.
-          </li>
-        </ul>
-      </section>
+.banner-content .btn-laranja:hover {
+  background: #e68900;
+}
 
-      <!-- Seção de novidades -->
-      <section class="novidades">
-        <h2>Novidades</h2>
-        <div class="accordion">
-          <div class="accordion-item">
-            <button class="accordion-header">
-              Novos Produtos <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="accordion-body">
-              <p>
-                Novos produtos chegaram à nossa loja, trazendo ainda mais opções
-                saudáveis para você e sua família.
-              </p>
-            </div>
-          </div>
+/* Container com postagens */
+.container-posts {
+  background: #f7f7f7;
+  margin: -50px 5% 0;
+  padding: 4rem 10%;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  z-index: 2;
+}
 
-          <div class="accordion-item">
-            <button class="accordion-header">
-              Estamos crescendo <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="accordion-body">
-              <p>
-                Estamos crescendo! Uma nova filial da NutriCampo está de portas
-                abertas para receber você.
-              </p>
-            </div>
-          </div>
+.container-posts h2 {
+  text-align: left;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #3d7a45;
+}
 
-          <div class="accordion-item">
-            <button class="accordion-header">
-              Aprenda com a NutriCampo <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="accordion-body">
-              <p>
-                Aprenda com a NutriCampo: como conservar frutas corretamente e
-                garantir mais sabor e durabilidade.
-              </p>
-            </div>
-          </div>
+.cards-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
 
-          <div class="accordion-item">
-            <button class="accordion-header">
-              Paciente NutriCampo <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="accordion-body">
-              <p>
-                Um paciente enfrentando anemia encontrou a NutriCampo para
-                melhorar sua alimentação e através de uma nova rotina alimentar
-                isso vem ajudando sua recuperação.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+.card-post {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
 
-    <!-- Footer -->
-    <div id="footer"></div>
+.card-post:hover {
+  transform: translateY(-8px);
+}
 
-    <script src="../js/script.js"></script>
-  </body>
-</html>
+.card-post img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.card-post h3 {
+  font-size: 1.3rem;
+  margin: 1rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  color: #3d7a45;
+}
+
+.card-post p {
+  margin: 0 1rem 1.5rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Banner interno */
+.banner-interno {
+  background: url("../img/trabalhadores.jpg") no-repeat center/cover;
+  text-align: center;
+  color: #fff;
+  padding: 6rem 10%;
+  border-radius: 15px;
+  margin: 3rem 0;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.banner-interno::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 15px;
+}
+
+.banner-interno-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.banner-interno-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6), 2px 2px 6px rgba(0, 0, 0, 0.6),
+    2px 2px 6px rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+}
+
+.banner-interno-content p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6), 2px 2px 6px rgba(0, 0, 0, 0.6),
+    2px 2px 6px rgba(0, 0, 0, 0.6);
+  margin-top: 30px;
+}
+
+.banner-externo-content ul {
+  font-size: 1.1rem;
+  margin: 0 auto;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  text-align: left;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 1rem;
+}
+
+.banner-externo-content ul li {
+  padding-bottom: 20px;
+}
+
+/* Novidades */
+.novidades {
+  padding: 2rem 0%;
+}
+
+.novidades h2 {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #3d7a45;
+}
+
+/* Acordeão */
+.accordion {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  flex: 1 1 calc(50% - 20px);
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.accordion-header {
+  width: 100%;
+  text-align: left;
+  background: #ff9800;
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.accordion-header i {
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-header i {
+  transform: rotate(180deg);
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+  background: #fafafa;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.accordion-item.active .accordion-body {
+  max-height: 300px;
+  padding: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .banner-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .container-posts {
+    padding: 3rem 5%;
+  }
+
+  .banner-interno {
+    padding: 4rem 5%;
+  }
+
+  .novidades {
+    padding: 3rem 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-blog {
+    height: 60vh;
+    padding: 0 5%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .banner-content .btn-laranja {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .cards-posts {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .banner-interno {
+    padding: 3rem 5%;
+  }
+
+  .banner-interno-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .banner-interno-content p {
+    font-size: 1rem;
+  }
+
+  .accordion-item {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-blog {
+    height: 50vh;
+    padding: 0 1rem;
+  }
+
+  .banner-content h1 {
+    line-height: 1.4;
+  }
+
+  .banner-content .btn-laranja {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .container-posts {
+    padding: 2rem 1rem;
+  }
+
+  .container-posts h2,
+  .novidades h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .card-post h3 {
+    font-size: 1.1rem;
+  }
+
+  .card-post p {
+    font-size: 0.9rem;
+  }
+
+  .banner-interno {
+    padding: 2rem 1rem;
+  }
+
+  .banner-interno-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .banner-interno-content p {
+    font-size: 0.9rem;
+  }
+
+  .banner-externo-content ul {
+    font-size: 0.9rem;
+  }
+
+  .accordion-header {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .accordion-body {
+    font-size: 0.9rem;
+  }
+}
