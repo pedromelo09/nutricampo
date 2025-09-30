@@ -30,7 +30,7 @@
 .accordion-item img {
   width: 100%;
   height: 180px;
-  object-fit: contain;
+  object-fit: fill;
 }
 
 .accordion-header {
